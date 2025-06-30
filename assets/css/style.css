@@ -129,8 +129,8 @@ header {
 
 /* Hero logo */
 .hero-logo {
-  width: 160px;
-  max-width: 40vw;
+  width: 200px;
+  max-width: 60vw;
   margin-inline: auto;
   margin-bottom: 1.5rem;
 }
@@ -262,4 +262,10 @@ footer {
   footer {
     background: #010409;
   }
+}
+
+/* Header logo image size */
+.logo img {
+  width: 48px;
+  height: auto;
 } 
