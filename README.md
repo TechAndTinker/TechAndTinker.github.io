@@ -2,18 +2,6 @@
 
 This repository contains the source code for the **Tech & Tinker Consulting** static website, designed to be hosted on **GitHub Pages**.
 
-## 🚀 Quick Start
-
-1. **Clone the repository** (skip if you already did):
-   ```bash
-   git clone https://github.com/your-username/tech-and-tinker.git
-   ```
-2. **Open `index.html` locally** to preview the site in your browser.
-3. **Customize** any text, images, or colors as you like.
-4. **Push** your changes to the `main` branch. GitHub Pages will automatically deploy the updated site (ensure Pages is enabled in repository settings).
-
-> **Tip**: If you need forms functionality, replace the `form` action in `index.html` with your own Formspree or Netlify Forms endpoint.
-
 ## 🗂 Folder Structure
 
 ```
