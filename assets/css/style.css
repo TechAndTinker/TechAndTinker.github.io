@@ -3,6 +3,7 @@
   --clr-dark: #121619;
   --clr-light: #ffffff;
   --clr-muted: #889095;
+  --clr-bg: #f5f4ef;
 
   --ff-base: 'Poppins', sans-serif;
 
@@ -20,7 +21,7 @@ body {
   font-family: var(--ff-base);
   line-height: 1.6;
   color: var(--clr-dark);
-  background-color: #fdfdfb;
+  background-color: var(--clr-bg);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -80,7 +81,7 @@ header {
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, #e8eef1 0%, #ffffff 100%);
+  background: linear-gradient(135deg, #e8eef1 0%, var(--clr-bg) 100%);
   position: relative;
   text-align: center;
   padding: 5rem 0 0;
