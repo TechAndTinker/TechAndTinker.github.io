@@ -81,7 +81,7 @@ header {
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, #e8eef1 0%, var(--clr-bg) 100%);
+  background: var(--clr-bg);
   position: relative;
   text-align: center;
   padding: 5rem 0 0;
