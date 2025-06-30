@@ -59,7 +59,11 @@ header {
   font-weight: 600;
   font-size: 1.25rem;
   text-decoration: none;
-  color: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+.logo span {
+  color: var(--clr-light);
 }
 
 .nav-links {
@@ -94,6 +98,7 @@ header {
 .hero h1 {
   font-size: clamp(2rem, 5vw, 3rem);
   margin-bottom: 1rem;
+  color: var(--clr-dark);
 }
 
 .hero p {
