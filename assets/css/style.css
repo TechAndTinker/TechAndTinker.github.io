@@ -127,6 +127,14 @@ header {
   transform: translateY(1px);
 }
 
+/* Hero logo */
+.hero-logo {
+  width: 160px;
+  max-width: 40vw;
+  margin-inline: auto;
+  margin-bottom: 1.5rem;
+}
+
 /* Section shared styles */
 section {
   padding: 4rem 0;
