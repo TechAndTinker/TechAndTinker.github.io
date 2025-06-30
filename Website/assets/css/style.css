@@ -1,0 +1,267 @@
+/* ------------------------------
+   Tech & Tinker Consulting
+   Main Stylesheet
+-------------------------------- */
+
+/* ==== CSS Reset & Base ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #e0e0e0;
+  background: #0d1b2a;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 4rem 0 5rem;
+}
+
+.section__title {
+  font-size: 2.5rem;
+  font-family: 'Fira Code', monospace;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #00e5ff;
+}
+
+/* ==== Header / Navigation ==== */
+.header {
+  width: 100%;
+  background: rgba(13, 27, 42, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-family: 'Fira Code', monospace;
+  font-size: 1.5rem;
+  color: #00e5ff;
+  text-decoration: none;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 60%;
+  height: 100vh;
+  background: #0d1b2a;
+  transition: 0.3s;
+  padding-top: 6rem;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav__link {
+  color: #e0e0e0;
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav__link:hover {
+  color: #00e5ff;
+}
+
+.nav__close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #e0e0e0;
+}
+
+.nav__toggle {
+  font-size: 1.5rem;
+  color: #e0e0e0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Show menu */
+.show-menu {
+  right: 0;
+}
+
+/* Desktop nav */
+@media screen and (min-width: 768px) {
+  .nav {
+    position: static;
+    width: auto;
+    height: auto;
+    background: transparent;
+    padding: 0;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+}
+
+/* ==== Hero Section ==== */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle at top left, #13293d 0%, #0d1b2a 70%);
+  padding: 0 1rem;
+}
+
+.hero__title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-family: 'Fira Code', monospace;
+  margin-bottom: 1rem;
+  color: #00e5ff;
+}
+
+.hero__subtitle {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn--primary {
+  background: #00e5ff;
+  color: #0d1b2a;
+}
+
+.btn--primary:hover {
+  background: #00b8cc;
+}
+
+/* ==== Services Section ==== */
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.service__card {
+  background: #13293d;
+  padding: 2rem 1.5rem;
+  border-radius: 6px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service__card:hover {
+  transform: translateY(-6px);
+}
+
+.service__icon {
+  font-size: 2.5rem;
+  color: #00e5ff;
+  margin-bottom: 1rem;
+}
+
+.service__title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.service__desc {
+  font-size: 0.95rem;
+  color: #c8c8c8;
+}
+
+/* ==== About Section ==== */
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about__text p + p {
+  margin-top: 1rem;
+}
+
+/* ==== Contact Section ==== */
+.contact__subtitle {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.contact__info a {
+  color: #00e5ff;
+  text-decoration: none;
+}
+
+.contact__info i {
+  margin-right: 0.5rem;
+  color: #00e5ff;
+}
+
+/* ==== Footer ==== */
+.footer {
+  padding: 1rem 0;
+  text-align: center;
+  background: #13293d;
+}
+
+/* Dynamic year */
+.footer__content p {
+  font-size: 0.9rem;
+} 

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tech & Tinker Consulting | Your All-Around Service Tech</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-xh6XQz0Vu3cqvwTWL1buzoM+o0p6zRNIvirkIut7bVbIi5stAXV9HbGerC28w3mXvCqsY2kMxJDNSa4x+XNmVg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- ===== Header / Navigation ===== -->
+    <header class="header" id="header">
+      <div class="container nav-container">
+        <a href="#" class="logo">Tech &amp; Tinker</a>
+        <nav class="nav" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+          </ul>
+          <span class="nav__close" id="nav-close"><i class="fas fa-times"></i></span>
+        </nav>
+        <div class="nav__toggle" id="nav-toggle"><i class="fas fa-bars"></i></div>
+      </div>
+    </header>
+
+    <!-- ===== Hero Section ===== -->
+    <section class="hero" id="home">
+      <div class="container hero__content">
+        <h1 class="hero__title">We Fix, Build &amp; Tinker</h1>
+        <p class="hero__subtitle">From computer repair to plumbing, electrical to stagehand services — one call does it all.</p>
+        <a href="#contact" class="btn btn--primary">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- ===== Services Section ===== -->
+    <section class="services section" id="services">
+      <div class="container">
+        <h2 class="section__title">Our Services</h2>
+        <div class="services__grid">
+          <div class="service__card">
+            <i class="fas fa-laptop-code service__icon"></i>
+            <h3 class="service__title">Computer Repair</h3>
+            <p class="service__desc">Hardware upgrades, virus removal &amp; troubleshooting.</p>
+          </div>
+          <div class="service__card">
+            <i class="fas fa-faucet-drip service__icon"></i>
+            <h3 class="service__title">Plumbing</h3>
+            <p class="service__desc">Fixing leaks, installing fixtures &amp; more.</p>
+          </div>
+          <div class="service__card">
+            <i class="fas fa-bolt service__icon"></i>
+            <h3 class="service__title">Electrical</h3>
+            <p class="service__desc">Wiring, lighting installs &amp; diagnostics.</p>
+          </div>
+          <div class="service__card">
+            <i class="fas fa-screwdriver-wrench service__icon"></i>
+            <h3 class="service__title">General Service Tech</h3>
+            <p class="service__desc">Maintenance &amp; repair of diverse equipment.</p>
+          </div>
+          <div class="service__card">
+            <i class="fas fa-theater-masks service__icon"></i>
+            <h3 class="service__title">Theatre Stagehand</h3>
+            <p class="service__desc">Rigging, set-ups &amp; live event support.</p>
+          </div>
+          <div class="service__card">
+            <i class="fas fa-toolbox service__icon"></i>
+            <h3 class="service__title">Custom Projects</h3>
+            <p class="service__desc">Got something unique? Let's tinker together.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About Section ===== -->
+    <section class="about section" id="about">
+      <div class="container about__content">
+        <div class="about__text">
+          <h2 class="section__title">About Tech &amp; Tinker</h2>
+          <p>
+            Tech &amp; Tinker Consulting is your one-stop solution for technical and household projects. With years of multi-disciplinary experience, we combine a passion for technology with hands-on craftsmanship to deliver reliable, creative solutions.
+          </p>
+          <p>
+            Whether it's debugging a stubborn computer, installing new lighting, or ensuring your stage show runs flawlessly — we bring precision, innovation, and a dash of creativity to every job.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <section class="contact section" id="contact">
+      <div class="container contact__content">
+        <h2 class="section__title">Get in Touch</h2>
+        <p class="contact__subtitle">Ready to start your project? Reach out today.</p>
+
+        <div class="contact__info">
+          <p><i class="fas fa-envelope"></i> <a href="mailto:hello@techandtinker.com">hello@techandtinker.com</a></p>
+          <p><i class="fas fa-phone"></i> <a href="tel:+15555555555">(555) 555-5555</a></p>
+          <p><i class="fas fa-location-dot"></i> Serving the Greater Metro Area</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <div class="container footer__content">
+        <p>&copy; <span id="year"></span> Tech &amp; Tinker Consulting. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Main Script -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html> 
